@@ -1,0 +1,63 @@
+.hero {
+  display: flex;
+  padding-inline: 1.25rem;
+  padding-top: 6rem;
+  overflow: hidden;
+  max-width: 1366px;
+  margin-inline: auto;
+}
+
+.hero__left {
+  flex: 1;
+}
+
+.hero__right {
+  flex: 1;
+}
+
+/* HERO LEFT */
+
+.hero__up-text {
+  color: #2eb1a3;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero__title{
+  font-size: 3.2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-top: 0.75rem;
+}
+
+.hero__description {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  font-weight: 300;
+  line-height: calc(1em + 0.5rem);
+  margin-block: 1.5rem;
+  max-width: 55ch;
+}
+
+.hero__btn {
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #e8546b, #ac3cf6);
+  padding: 0.8em 3em;
+  border-radius: 8px;
+  color: #010101;
+}
+
+.hero__btn:hover {
+  background: linear-gradient(16deg, #e8546b, #ac3cf6);
+  transition: all 0.4s ease-in-out;
+}
+
+/* HERO LEFT */
+
+.hero__img {
+  transform: rotate(20deg);
+  margin-left: 2rem;
+  max-width: 450px;
+}
