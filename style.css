@@ -1,71 +1,71 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-  --text-color: #ffff; 
+:root {
+  --text-color: #ffff;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highligth-color: rgba(0, 0, 0, 0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg)
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-.ligth{
-  --text-color: black;
+.ligth {
+  --text-color: #ffff;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highligth-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/sun.svg)
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
-body{
+body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
-body *{
-  font-family: 'Inter', sans-serif;
+body * {
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
-#container{
-  width: 100%;;
-  max-width: 588px;
-  margin: 0 auto;
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
   padding: 24px;
-  height: 100vh;
 }
 
 /*profile*/
-#profile {
+
+.profile {
   text-align: center;
   padding: 24px;
 }
 
-#profile img{
+.profile img {
   width: 124px;
-  }
+}
 
-  #profile p {
+.profile p {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
-  }
+}
 
 /*switch*/
-#switch{
+.switch {
   position: relative;
   width: 64px;
   margin: 4px auto;
 }
 
-#switch button{
+.switch button {
   width: 32px;
   height: 32px;
   border: 0;
@@ -73,24 +73,23 @@ body *{
   background-image: var(--switch-bg-url);
   background-position: center;
   background-repeat: no-repeat;
-  
   position: absolute;
   z-index: 1;
   left: 0;
   transform: translateY(-50%);
   top: 50%;
-  animation: slide-back 0.3s ;
+  animation: slide-back 0.3s;
 }
 
-.ligth #switch button{
+.ligth .switch button {
   animation: slide-in 0.3s forwards;
 }
 
-#switch button:hover{
+.switch button:hover {
   outline: 8px solid var(--highligth-color);
 }
 
-#switch span{
+.switch span {
   width: 64px;
   height: 24px;
   display: block;
@@ -99,44 +98,168 @@ body *{
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
+}
+
+/* Cards */
+
+.section__title h1{
+  font-size: 2.4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 0.75rem;
+  color: #2eb1a3;
+}
+
+.section__description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: calc(1em + 0.7rem);
+  margin-block: 2rem;
+}
+
+.features-wraper {
+  background-color: hsla(240, 32%, 11%, 0.90);
+  padding: 4rem ;
+  border-radius: 12px;
   
 }
 
-  /*links*/
-ul{
-  list-style: none;
+.features__text {
+  text-align: center;
+}
+
+.features--description {
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+.features__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.feature__card {
+  background-color: hsla(233, 24%, 19%, 0.74);
+  border-radius: 12px;
+  flex: 1;
+  min-width: 300px;
+  min-height: 400px;
+}
+
+.feature__card-title {
+  margin-bottom: 1.25rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.feature__img {
+  width: 100%;
+  border-radius: 12px 12px 4px 4px ;
+}
+
+.feature__card-body-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color:#2eb1a3;
+}
+
+.feature__card-body {
+  padding: 1rem;
+}
+
+.hr {
+  width: 100%;
+  margin-inline: auto;
+  border-bottom: 0.05rem solid var(--stroke-color);
+  opacity: 25%;
+}
+
+.feature__card-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  margin-top: 1.25rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding-top: 24px;
 }
 
-ul li a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  padding: 16px 24px;
+.feature__link {
+  margin-top: 1.25rem;
+}
 
+.feature__card-link {
   text-decoration: none;
-  font-weight: 500px;  
+  cursor: pointer;
+  font-size: 1.125rem;
+}
 
+.feature__card-link:hover {
+  border-bottom: 0.05rem solid #2eb1a3;
+  color:#2eb1a3;
+}
+
+@media (width < 425px) {
+  .feature__card {
+    min-width: 260px;
+  }
+  .features-wraper {
+    padding: 2rem;
+  }
+}
+
+.cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: minmax(300px, auto);
+  place-items: center;
+  grid-gap: 1rem;
+}
+
+.card {
+  max-width: 100%;
+  height: 300px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
-  
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-
-  transition: all 0.3s;
 }
 
-ul li a:hover{
+.cards a {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 500px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.3s;
+  margin-top: 16px;
+}
+
+.cards a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
-#social-links{
+.card1__img img{
+  width: 100%;
+  padding: 1px;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+
+.social-links {
   display: flex;
   gap: 16px;
   padding: 32px 16px;
@@ -144,7 +267,7 @@ ul li a:hover{
   justify-content: space-evenly;
 }
 
-#social-links a{
+.social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,38 +276,38 @@ ul li a:hover{
   border-radius: 50%;
 }
 
-#social-links a:hover{
+.social-links a:hover {
   background: var(--highligth-color);
 }
 
-footer{
+footer {
   padding: 24px 0;
   text-align: center;
   font-size: 1rem;
 }
 
-@media (min-width: 700px){
-  :root{
-    --bg-url: url(./assets/bg-desktop.jpg)
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
-  .ligth{
-    --bg-url: url(./assets/bg-ligth-desktop.jpg)
+  .ligth {
+    --bg-url: url(./assets/bg-ligth-desktop.jpg);
   }
 }
 
-@keyframes slide-in{
-  from{
+@keyframes slide-in {
+  from {
     left: 0;
   }
-  to{
+  to {
     left: 50%;
   }
 }
-@keyframes slide-back{
-  from{
+@keyframes slide-back {
+  from {
     left: 50%;
   }
-  to{
+  to {
     left: 0;
   }
 }
