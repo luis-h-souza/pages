@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  color: #fff;
+}
+
+* {
+  color: #fff;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.header {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header #header_link {
+  color: #fff;
+}
+.header #header_link:hover {
+  color: #b9b9b9;
+  transition: ease 0.3s;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#button {
+  padding: 1rem 2.2rem;
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 7rem;
+  margin-top: 8rem;
+}
+
+.logoPc {
+  width: 15rem;
+  margin-left: -0.625rem;
+}
+
+.footer {
+  background-color: #000;
+  height: 15vh;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.footer span {
+  color: #555252;
+}
+.footer .link {
+  color: #fff;
+}
+.footer .link:hover {
+  color: #b9b9b9;
+  transition: ease 0.3s;
+}
+
+@media (max-width: 425px) {
+  .logoPc {
+    width: 11.25rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .footer {
+    font-size: 0.625rem;
+  }
+}
+@media (max-width: 320px) {
+  .logoPc {
+    width: 9.375rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+.container00.container01 {
+  background-image: url(../../assets/img/home/01.jpg);
+}
+.container00.container02 {
+  background-image: url(../../assets/img/home/02.gif);
+}
+.container00.container03 {
+  background-image: url(../../assets/img/home/03.jpg);
+}
+.container00.container04 {
+  background-image: url(../../assets/img/home/04.jpg);
+}
+
+.short-title {
+  width: 35rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: -1.563rem;
+}
+
+.mediem-title {
+  width: 40rem;
+  margin-bottom: -1.563rem;
+}
+
+.title-padding {
+  padding-top: 13rem;
+}
+
+@media (max-width: 750px) {
+  .title-padding {
+    padding-top: 7.5rem;
+  }
+  .short-title,
+  .mediem-title {
+    width: auto;
+    font-size: 3.125rem;
+  }
+}
+@media (max-width: 350px) {
+  .short-title,
+  .mediem-title {
+    width: auto;
+    font-size: 2.25rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
