@@ -1,0 +1,68 @@
+.container00 {
+  &.container05{
+    background-image: url(../../assets/img/falcon9/01.jpg);
+  }
+
+  &.container06{
+    background-image: url(../../assets/img/falcon9/02.jpg);
+  }
+
+  &.container03{
+    background-image: url(../../assets/img/falcon9/03.jpg);
+  }
+
+  &.container04{
+    background-image: url(../../assets/img/falcon9/04.jpg);
+  }
+}
+
+.title_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+  width: 100%;
+  & .title_falcon {
+    font-family: 'Rubik', sans;
+    font-size: 5.625rem;
+    font-weight: 500;
+  }
+  & .subtitle_falcon {
+    font-size: 1.25rem;
+  }
+}
+
+.numbers {
+  height: 50vh;
+  flex-wrap: wrap;
+  & .title_number {
+    font-size: 5.625rem;
+    font-weight: 500;
+  }
+  & .subtitle_number {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+.falcon_description {
+  width: 40rem;
+  line-height: 3.125rem;
+  font-size: 1.625rem;
+}
+
+@media (max-width: 425px) {
+  .title_falcon {
+    font-size: 3rem !important;
+  }
+  .subtitle_falcon {
+    font-size: 1rem !important;
+  }
+  .title_number {
+    font-size: 2.5rem !important;
+  }
+  .subtitle_number {
+    font-size: .9rem!important ;
+  }
+}
