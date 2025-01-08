@@ -1,0 +1,87 @@
+.container00 {
+  &.container09 {
+    background-image: url(../assets/img/humanFlight/01.jpg);
+
+    & .container01Content {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & h1 {
+        font-size: 7.5rem;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.875rem;
+        font-weight: 300;
+      }
+    }
+  }
+  &.container10 {
+    background-image: url(../assets/img/humanFlight/02.jpg);
+  }
+  &.container11 {
+    background-image: url(../assets/img/humanFlight/03.jpg);
+  }
+  &.container12 {
+    background-image: url(../assets/img/humanFlight/04.jpg);
+  }
+  &.container13 {
+    background-image: url(../assets/img/humanFlight/05.jpg);
+  }
+}
+
+.earth__description {
+  height: 25vh;
+  & p {
+    width: 50rem;
+    font-size: 1.25rem;
+  }
+  a {
+    text-decoration: none;
+    color: #d8d8d8;
+    &:hover {
+      color: #fff;
+      transition: ease 0.3s;
+    }
+  }
+}
+
+.titleSection {
+  font-size: 3.75rem;
+}
+
+@media (max-width: 768px) {
+  .contentTitle {
+    font-size: 5rem !important;
+  }
+  .contentSubtitle {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .contentTitle {
+    font-size: 4rem !important;
+  }
+  .contentSubtitle {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .contentTitle {
+    font-size: 3rem !important;
+  }
+  .contentSubtitle {
+    font-size: 1rem !important;
+  }
+  .earth__description {
+    height: 20vh;
+    & p {
+      width: 25rem;
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+  }
+}

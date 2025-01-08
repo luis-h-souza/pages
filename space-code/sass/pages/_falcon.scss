@@ -1,0 +1,210 @@
+.container00 {
+  &.container05 {
+    background-image: url(../assets/img/falcon9/01.jpg);
+    & .title_content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 80vh;
+      width: 100%;
+      & .title_falcon {
+        font-family: "Rubik", sans;
+        font-size: 5.625rem;
+        font-weight: 500;
+        text-shadow: 0px 5px 10px #b2a98f, 0px 10px 10px rgba(0, 0, 0, 0.15),
+          0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+      }
+      & .subtitle_falcon {
+        font-size: 1.25rem;
+        text-shadow: 0px 5px 10px #b2a98f, 0px 10px 10px rgba(0, 0, 0, 0.15),
+          0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  &.container06 {
+    background-image: url(../assets/img/falcon9/02.jpg);
+    & .falcon_description {
+      width: 48rem;
+      line-height: 3.125rem;
+      font-size: 1.4rem;
+    }
+  }
+  &.carrosel01 {
+    background-image: url(../assets/img/falcon9/03.jpg);
+  }
+  &.carrosel02 {
+    background-image: url(../assets/img/falcon9/04.jpg);
+  }
+  &.carrosel03 {
+    background-image: url(../assets/img/falcon9/05.jpg);
+  }
+  &.carrosel04 {
+    background-image: url(../assets/img/falcon9/06.jpg);
+  }
+  &.carrosel05 {
+    background-image: url(../assets/img/falcon9/07.jpg);
+  }
+  &.container07 {
+    background-image: url(../assets/img/falcon9/08.jpg);
+  }
+  &.container08 {
+    padding: 0;
+  }
+}
+
+.numbers {
+  height: 50vh;
+  flex-wrap: wrap;
+  & .title_number {
+    font-size: 5.625rem;
+    font-weight: 500;
+  }
+  & .subtitle_number {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+.table{
+  --bs-table-bg: transparent!important;
+  --bs-table-color: #fff!important;
+}
+
+#overviewPosition {
+  width: 31.25rem;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+.carroselSlide {
+  img {
+    height: 100vh;
+  }
+}
+
+.download_description {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  a {
+    text-decoration: none;
+    color: #555252;
+    &:hover {
+      color: #b9b9b9;
+      transition: ease 0.3s;
+    }
+  }
+}
+
+// media queries
+@media (max-width: 768px) {
+  .title_falcon {
+    font-size: 4rem !important;
+  }
+  .subtitle_falcon {
+    font-size: 1.13rem !important;
+  }
+  .title_number {
+    font-size: 3.5rem !important;
+  }
+  .subtitle_number {
+    font-size: 1rem !important;
+  }
+  .falcon_description {
+    width: auto!important;
+    line-height: 2rem !important;
+    font-size: 1.2rem !important;
+    margin: 0 auto!important;
+    padding-top: 25%;
+  }
+  #overviewPosition {
+    padding-top: 25%;
+  }
+}
+
+@media (max-width: 590px) {
+  #overviewPosition {
+    width: 28rem!important;
+    margin: 0 auto;
+    margin-left: auto;
+    padding: 0;
+    #titleOverview {
+      max-width: max-content;
+      padding-inline: .3125rem;
+    }
+  }
+  .numbers {
+    height: 60vh;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .title_falcon {
+    font-size: 3rem !important;
+  }
+  .subtitle_falcon {
+    font-size: 1rem !important;
+  }
+  .title_number {
+    font-size: 2.5rem !important;
+  }
+  .subtitle_number {
+    font-size: 0.9rem !important ;
+    width: auto;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #overviewPosition{
+    width: max-content!important;
+    padding-top: 30%;
+  & .subtitleOverview, .titleOverview {
+    width: max-content;  
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    }
+  }
+  #widthTable {
+    width: auto;
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
+  #overviewPosition p {
+    width: 20rem;
+    margin: 0 auto;
+  }
+  .merlin__description {
+    width: 20rem;
+    padding-bottom: 1rem;
+  }
+  .download_description button{
+    font-size: 0.8rem!important;
+  }
+}
+
+@media (max-width: 350px) {
+  #overviewPosition{
+    width: max-content!important;
+    padding-top: 30%;
+    & .subtitleOverview, .titleOverview {
+      width: max-content;  
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+      }
+    & #widthTable {
+      width: auto;
+      margin: 0 auto;
+      font-size: 0.7rem;
+    }
+    .merlin__description {
+      width: 18rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
