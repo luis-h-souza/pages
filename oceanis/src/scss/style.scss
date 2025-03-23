@@ -1,0 +1,33 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+.hero {
+  background-image: url('../assets/pexels-kellie-churchman-371878-1001682.webp');
+  background-size: cover;
+  background-position: center;
+  height: 32rem;
+  border-image: fill 0 linear-gradient(#0003, #000);
+  }
+
+  .card {
+    width: 24rem;
+  }
+
+  .img__depoimento {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .destinos {
+    background-image: url('../assets/destinos.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 32rem;
+    border-image: fill 0 linear-gradient(#0003, #000);
+    display: flex;
+    }
+
+    
