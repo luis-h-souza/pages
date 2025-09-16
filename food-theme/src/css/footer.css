@@ -1,0 +1,33 @@
+footer {
+  background-color: #ffe8b4;
+}
+
+#footer_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8% 1.5rem 8%;
+  align-items: center;
+}
+
+#copyright {
+  color: var(--color-links-active);
+  font-size: clamp(.875rem, 2vw, 1rem);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 678px) {
+  #footer_items {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  #copyright {
+    margin-block: 16px;
+    text-align: center;
+  }
+  #footer_items .social-media-buttons a {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+}
