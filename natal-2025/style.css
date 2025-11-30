@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Gradiente de texto em tons de vermelho */
+.text-gradient-red {
+  background: linear-gradient(90deg, #ffffff 5%, #ff3b3b 50%, #b30f0f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
