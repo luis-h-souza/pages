@@ -101,7 +101,6 @@ body * {
 }
 
 /* Cards */
-
 .section__title h1{
   font-size: 2.4rem;
   line-height: 1.1;
@@ -121,7 +120,6 @@ body * {
   background-color: hsla(240, 32%, 11%, 0.90);
   padding: 4rem ;
   border-radius: 12px;
-  
 }
 
 .features__text {
@@ -131,6 +129,7 @@ body * {
 .features--description {
   max-width: 60ch;
   margin-inline: auto;
+  margin-bottom: 3rem;
 }
 
 .features__cards {
